@@ -114,7 +114,7 @@ def main():
     decisions = ontology.load_decision_tree()
     # with StanfordCoreNLP('/home/xianyang/stanford-corenlp-full-2017-06-09/') as nlp:
     # with StanfordCoreNLP('http://localhost', port=9006) as nlp:
-    with StanfordCoreNLP('/home/lawrench/OPERA/xianyang/stanford-corenlp-full-2017-06-09/', memory='8g') as nlp:
+    with StanfordCoreNLP('./stanford-corenlp-full-2017-06-09/', memory='8g') as nlp:
         start_time = time.time()
         if read_raw:
             files = os.listdir(input_dir)
